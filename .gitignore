@@ -1,0 +1,97 @@
+############
+# macOS
+############
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+############
+# Xcode (proyecto y derivados)
+############
+DerivedData/
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Paquetes que Xcode cachea localmente
+SourcePackages/
+
+############
+# Swift Package Manager
+############
+.build/
+.swiftpm/
+# Mantén el candado: Xcode/SwiftPM lo generan y conviene versionarlo
+!**/Package.resolved
+
+############
+# Playgrounds
+############
+timeline.xctimeline
+playground.xcworkspace
+
+############
+# CocoaPods (si usas Pods)
+############
+Pods/
+# Mantén estos archivos en git:
+!Podfile
+!Podfile.lock
+
+############
+# Carthage (si usas Carthage)
+############
+Carthage/Build/
+# O ignora todo Carthage si no lo versionas
+# Carthage/
+
+# Mantén los archivos de definición/bloqueo
+!Cartfile
+!Cartfile.resolved
+
+############
+# Accio (si lo usas)
+############
+.accio/
+Dependencies/
+
+############
+# fastlane
+############
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+############
+# Cobertura / informes
+############
+*.xccoverage
+*.gcno
+
+############
+# Archivos de entorno/secrets (opcional)
+############
+.env
+.env.*
+*.key
+*.p12
+*.mobileprovision
+# Si manejas configs sensibles por entorno, considera ignorar:
+# GoogleService-Info.plist
+
