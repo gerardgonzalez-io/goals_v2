@@ -6,17 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FD5F3BC02E9C66B4004AEC44 /* GoalsV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BBD2E9C66B4004AEC44 /* GoalsV2App.swift */; };
+		FD5F3BC12E9C66B4004AEC44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BBC2E9C66B4004AEC44 /* ContentView.swift */; };
+		FD5F3BC22E9C66B4004AEC44 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BBE2E9C66B4004AEC44 /* Item.swift */; };
+		FD5F3BC32E9C66B4004AEC44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5F3BBB2E9C66B4004AEC44 /* Assets.xcassets */; };
+		FD5F3BC62E9C6768004AEC44 /* StudySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BC52E9C6768004AEC44 /* StudySession.swift */; };
+		FD5F3BC82E9C6797004AEC44 /* DailyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BC72E9C6797004AEC44 /* DailyStatus.swift */; };
+		FD5F3BCA2E9C67BF004AEC44 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BC92E9C67BF004AEC44 /* Goal.swift */; };
+		FD5F3BCC2E9C67D6004AEC44 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BCB2E9C67D6004AEC44 /* Topic.swift */; };
+		FD5F3BCE2E9C6804004AEC44 /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BCD2E9C6804004AEC44 /* GoalModel.swift */; };
+		FD5F3BD02E9C683E004AEC44 /* Streak.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BCF2E9C683E004AEC44 /* Streak.swift */; };
+		FD5F3BD22E9C6850004AEC44 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BD12E9C6850004AEC44 /* Timer.swift */; };
+		FD5F3BD42E9C6877004AEC44 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BD32E9C6877004AEC44 /* SampleData.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FD5F3BA32E9C6364004AEC44 /* GoalsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5F3BBB2E9C66B4004AEC44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD5F3BBC2E9C66B4004AEC44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD5F3BBD2E9C66B4004AEC44 /* GoalsV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsV2App.swift; sourceTree = "<group>"; };
+		FD5F3BBE2E9C66B4004AEC44 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FD5F3BC52E9C6768004AEC44 /* StudySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySession.swift; sourceTree = "<group>"; };
+		FD5F3BC72E9C6797004AEC44 /* DailyStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStatus.swift; sourceTree = "<group>"; };
+		FD5F3BC92E9C67BF004AEC44 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		FD5F3BCB2E9C67D6004AEC44 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		FD5F3BCD2E9C6804004AEC44 /* GoalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
+		FD5F3BCF2E9C683E004AEC44 /* Streak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streak.swift; sourceTree = "<group>"; };
+		FD5F3BD12E9C6850004AEC44 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		FD5F3BD32E9C6877004AEC44 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		FD5F3BA52E9C6364004AEC44 /* GoalsV2 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GoalsV2;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FD5F3BA02E9C6364004AEC44 /* Frameworks */ = {
@@ -32,7 +51,7 @@
 		FD5F3B9A2E9C6364004AEC44 = {
 			isa = PBXGroup;
 			children = (
-				FD5F3BA52E9C6364004AEC44 /* GoalsV2 */,
+				FD5F3BBF2E9C66B4004AEC44 /* GoalsV2 */,
 				FD5F3BA42E9C6364004AEC44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +62,33 @@
 				FD5F3BA32E9C6364004AEC44 /* GoalsV2.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FD5F3BBF2E9C66B4004AEC44 /* GoalsV2 */ = {
+			isa = PBXGroup;
+			children = (
+				FD5F3BC42E9C6754004AEC44 /* Models */,
+				FD5F3BBC2E9C66B4004AEC44 /* ContentView.swift */,
+				FD5F3BBD2E9C66B4004AEC44 /* GoalsV2App.swift */,
+				FD5F3BBE2E9C66B4004AEC44 /* Item.swift */,
+				FD5F3BBB2E9C66B4004AEC44 /* Assets.xcassets */,
+			);
+			path = GoalsV2;
+			sourceTree = "<group>";
+		};
+		FD5F3BC42E9C6754004AEC44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD5F3BCD2E9C6804004AEC44 /* GoalModel.swift */,
+				FD5F3BC52E9C6768004AEC44 /* StudySession.swift */,
+				FD5F3BC72E9C6797004AEC44 /* DailyStatus.swift */,
+				FD5F3BC92E9C67BF004AEC44 /* Goal.swift */,
+				FD5F3BCB2E9C67D6004AEC44 /* Topic.swift */,
+				FD5F3BCF2E9C683E004AEC44 /* Streak.swift */,
+				FD5F3BD12E9C6850004AEC44 /* Timer.swift */,
+				FD5F3BD32E9C6877004AEC44 /* SampleData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +105,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				FD5F3BA52E9C6364004AEC44 /* GoalsV2 */,
 			);
 			name = GoalsV2;
 			packageProductDependencies = (
@@ -109,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5F3BC32E9C66B4004AEC44 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +163,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5F3BC02E9C66B4004AEC44 /* GoalsV2App.swift in Sources */,
+				FD5F3BC82E9C6797004AEC44 /* DailyStatus.swift in Sources */,
+				FD5F3BC12E9C66B4004AEC44 /* ContentView.swift in Sources */,
+				FD5F3BD22E9C6850004AEC44 /* Timer.swift in Sources */,
+				FD5F3BC62E9C6768004AEC44 /* StudySession.swift in Sources */,
+				FD5F3BCA2E9C67BF004AEC44 /* Goal.swift in Sources */,
+				FD5F3BC22E9C66B4004AEC44 /* Item.swift in Sources */,
+				FD5F3BCE2E9C6804004AEC44 /* GoalModel.swift in Sources */,
+				FD5F3BD42E9C6877004AEC44 /* SampleData.swift in Sources */,
+				FD5F3BD02E9C683E004AEC44 /* Streak.swift in Sources */,
+				FD5F3BCC2E9C67D6004AEC44 /* Topic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +306,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2RD559DGF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -282,6 +338,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2RD559DGF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

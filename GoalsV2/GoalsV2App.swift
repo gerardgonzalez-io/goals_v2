@@ -9,22 +9,29 @@ import SwiftUI
 import SwiftData
 
 @main
-struct GoalsV2App: App {
-    var sharedModelContainer: ModelContainer = {
+struct GoalsV2App: App
+{
+    var sharedModelContainer: ModelContainer =
+    {
         let schema = Schema([
             Item.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
-        do {
+        do
+        {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
+        }
+        catch
+        {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
 
-    var body: some Scene {
-        WindowGroup {
+    var body: some Scene
+    {
+        WindowGroup
+        {
             ContentView()
         }
         .modelContainer(sharedModelContainer)
