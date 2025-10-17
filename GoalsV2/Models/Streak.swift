@@ -132,7 +132,7 @@ private func dailyStatusesByDay( from sessions: [StudySession]) -> [(day: Date, 
     var grouped: [Date: [StudySession]] = [:]
     for session in sessions
     {
-        guard let day = session.normalizedDay else { continue }
+        let day = session.normalizedDay
         grouped[day, default: []].append(session)
     }
 

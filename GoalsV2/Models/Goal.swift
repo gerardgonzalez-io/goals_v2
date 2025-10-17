@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import SwiftData
 
+@Model
 class Goal
 {
     var createdAt: Date
@@ -23,9 +25,16 @@ class Goal
         goalInMinutes / 60
     }
 
-    init(goalInMinutes: Int)
+    init(goalInMinutes: Int, createdAt: Date = Date())
     {
         self.goalInMinutes = goalInMinutes
-        self.createdAt = Date()
+        self.createdAt = createdAt
     }
+}
+
+extension Goal
+{
+    static let sampleData = [
+        Goal(goalInMinutes: 60),
+    ]
 }

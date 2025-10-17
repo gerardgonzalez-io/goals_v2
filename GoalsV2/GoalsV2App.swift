@@ -11,10 +11,15 @@ import SwiftData
 @main
 struct GoalsV2App: App
 {
+    // Persisted flag that survives app relaunches; cleared only when app is deleted
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding: Bool = false
+
     var sharedModelContainer: ModelContainer =
     {
         let schema = Schema([
-            Item.self,
+            Goal.self,
+            Topic.self,
+            StudySession.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -30,9 +35,20 @@ struct GoalsV2App: App
 
     var body: some Scene
     {
+        // WindosGroup vs Group, study the differences.
         WindowGroup
         {
-            ContentView()
+            if hasCompletedOnboarding
+            {
+                ContentView()
+            }
+            else
+            {
+                OnboardingView
+                {
+                    hasCompletedOnboarding = true
+                }
+            }
         }
         .modelContainer(sharedModelContainer)
     }

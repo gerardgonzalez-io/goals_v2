@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import SwiftData
 
+@Model
 class StudySession
 {
     var topic: Topic
@@ -15,10 +17,11 @@ class StudySession
     var endDate: Date?
 
     /// Normalized start of day for this session's startDate using the current calendar and time zone.
-    /// Returns nil if startDate is nil.
-    var normalizedDay: Date?
+    /// Returns Date() if startDate is nil.
+    var normalizedDay: Date
     {
-        guard let startDate else { return nil }
+        // verifica cuando startDate es nil porque si es nil, si se llega a dar ese caso
+        guard let startDate else { return Date() }
         var calendarWithTimeZone = Calendar.current
         calendarWithTimeZone.timeZone = TimeZone.current
         return calendarWithTimeZone.startOfDay(for: startDate)
@@ -29,7 +32,7 @@ class StudySession
         guard let startDate, let endDate else { return 0 }
         let seconds = endDate.timeIntervalSince(startDate)
         if seconds <= 0 { return 0 }
-        return Int((seconds / 60).rounded())
+        return Int((seconds / 60))
     }
 
     init(topic: Topic, goal: Goal, startDate: Date? = nil, endDate: Date? = nil)
@@ -43,13 +46,37 @@ class StudySession
 
 extension StudySession
 {
-    /*
-    /// Utility to normalize any date to the start of day in a specific time zone and calendar.
-    static func startOfDay(for date: Date, calendar: Calendar = .current, timeZone: TimeZone = .current) -> Date
-    {
-        var calendarWithTimeZone = calendar
-        calendarWithTimeZone.timeZone = timeZone
-        return calendarWithTimeZone.startOfDay(for: date)
-    }
-    */
+    /// Sample data for previews, tests, or prototyping.
+    static let sampleData: [StudySession] = {
+        let topics = Topic.sampleData
+        let goal = Goal.sampleData.first!
+        let now = Date()
+
+        return [
+            StudySession(
+                topic: topics[2],
+                goal: goal,
+                startDate: now.addingTimeInterval(-48 * 60 * 60 - 4 * 60),
+                endDate:   now.addingTimeInterval(-48 * 60 * 60),
+            ),
+            StudySession(
+                topic: topics[3],
+                goal: goal,
+                startDate: now.addingTimeInterval(-72 * 60 * 60 - (30 * 60 + 30)),
+                endDate:   now.addingTimeInterval(-72 * 60 * 60),
+            ),
+            StudySession(
+                topic: topics[3],
+                goal: goal,
+                startDate: now.addingTimeInterval(-72 * 60 * 60 - (30 * 60 + 30)),
+                endDate:   now.addingTimeInterval(-72 * 60 * 60),
+            ),
+            StudySession(
+                topic: topics[5],
+                goal: goal,
+                startDate: now.addingTimeInterval(-120 * 60 * 60 - (2 * 60 + 45)),
+                endDate:   now.addingTimeInterval(-120 * 60 * 60),
+            ),
+        ]
+    }()
 }
