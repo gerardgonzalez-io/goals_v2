@@ -30,6 +30,8 @@ struct Streak
     
     let sessions: [StudySession]
 
+    var isCurrentStreakActive: Bool { self.currentStreak > 0 }
+
     /// Longest historical streak across all normalized days in `sessions`.
     ///
     /// Computes the maximum length of any consecutive run of met days.
@@ -126,7 +128,7 @@ struct Streak
 /// Computes DailyStatus per normalized day.
 /// Sessions are first grouped by `StudySession.normalizedDay` (already normalized), then `DailyStatus.compute(from:)` is applied per group.
 /// The result contains one entry per unique normalized day.
-private func dailyStatusesByDay( from sessions: [StudySession]) -> [(day: Date, status: DailyStatus)]
+private func dailyStatusesByDay(from sessions: [StudySession]) -> [(day: Date, status: DailyStatus)]
 {
     // Group sessions by their already-normalized day (skip sessions without startDate)
     var grouped: [Date: [StudySession]] = [:]

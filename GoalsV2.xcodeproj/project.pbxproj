@@ -16,6 +16,11 @@
 		FD1240DB2EA2A40A00C4BC15 /* TopicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240DA2EA2A40A00C4BC15 /* TopicDetailView.swift */; };
 		FD1240DD2EA2A50300C4BC15 /* TopicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240DC2EA2A50300C4BC15 /* TopicCard.swift */; };
 		FD1240DF2EA2A54800C4BC15 /* NewTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240DE2EA2A54800C4BC15 /* NewTopicView.swift */; };
+		FD1240E42EA2C58D00C4BC15 /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240E32EA2C58D00C4BC15 /* StreakView.swift */; };
+		FD1240E62EA2C5BF00C4BC15 /* LongestStreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240E52EA2C5BF00C4BC15 /* LongestStreakView.swift */; };
+		FD1240E82EA2C5D000C4BC15 /* WeekRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240E72EA2C5D000C4BC15 /* WeekRow.swift */; };
+		FD1240EA2EA2C5E200C4BC15 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240E92EA2C5E200C4BC15 /* WeekDay.swift */; };
+		FD1240EC2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240EB2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift */; };
 		FD5F3BC02E9C66B4004AEC44 /* GoalsV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BBD2E9C66B4004AEC44 /* GoalsV2App.swift */; };
 		FD5F3BC12E9C66B4004AEC44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BBC2E9C66B4004AEC44 /* ContentView.swift */; };
 		FD5F3BC32E9C66B4004AEC44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5F3BBB2E9C66B4004AEC44 /* Assets.xcassets */; };
@@ -39,6 +44,11 @@
 		FD1240DA2EA2A40A00C4BC15 /* TopicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailView.swift; sourceTree = "<group>"; };
 		FD1240DC2EA2A50300C4BC15 /* TopicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCard.swift; sourceTree = "<group>"; };
 		FD1240DE2EA2A54800C4BC15 /* NewTopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTopicView.swift; sourceTree = "<group>"; };
+		FD1240E32EA2C58D00C4BC15 /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
+		FD1240E52EA2C5BF00C4BC15 /* LongestStreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestStreakView.swift; sourceTree = "<group>"; };
+		FD1240E72EA2C5D000C4BC15 /* WeekRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekRow.swift; sourceTree = "<group>"; };
+		FD1240E92EA2C5E200C4BC15 /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		FD1240EB2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalMinutesPickerSheet.swift; sourceTree = "<group>"; };
 		FD5F3BA32E9C6364004AEC44 /* GoalsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD5F3BBB2E9C66B4004AEC44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5F3BBC2E9C66B4004AEC44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				FD1240D72EA2A39B00C4BC15 /* Topic */,
+				FD1240E22EA2C54B00C4BC15 /* Streak */,
 				FD1240CC2EA29EA500C4BC15 /* Onboarding */,
 				FD5F3BBC2E9C66B4004AEC44 /* ContentView.swift */,
 			);
@@ -95,6 +106,18 @@
 				FD1240DE2EA2A54800C4BC15 /* NewTopicView.swift */,
 			);
 			path = Topic;
+			sourceTree = "<group>";
+		};
+		FD1240E22EA2C54B00C4BC15 /* Streak */ = {
+			isa = PBXGroup;
+			children = (
+				FD1240E32EA2C58D00C4BC15 /* StreakView.swift */,
+				FD1240E52EA2C5BF00C4BC15 /* LongestStreakView.swift */,
+				FD1240E72EA2C5D000C4BC15 /* WeekRow.swift */,
+				FD1240E92EA2C5E200C4BC15 /* WeekDay.swift */,
+				FD1240EB2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift */,
+			);
+			path = Streak;
 			sourceTree = "<group>";
 		};
 		FD5F3B9A2E9C6364004AEC44 = {
@@ -211,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1240E42EA2C58D00C4BC15 /* StreakView.swift in Sources */,
 				FD5F3BC02E9C66B4004AEC44 /* GoalsV2App.swift in Sources */,
 				FD5F3BC82E9C6797004AEC44 /* DailyStatus.swift in Sources */,
 				FD5F3BC12E9C66B4004AEC44 /* ContentView.swift in Sources */,
@@ -219,15 +243,19 @@
 				FD1240D92EA2A3A900C4BC15 /* TopicListView.swift in Sources */,
 				FD1240D42EA2A07A00C4BC15 /* FeatureCard.swift in Sources */,
 				FD5F3BC62E9C6768004AEC44 /* StudySession.swift in Sources */,
+				FD1240EA2EA2C5E200C4BC15 /* WeekDay.swift in Sources */,
 				FD1240D22EA2A05300C4BC15 /* FeaturePage.swift in Sources */,
 				FD1240D62EA2A0A900C4BC15 /* GoalView.swift in Sources */,
 				FD1240DB2EA2A40A00C4BC15 /* TopicDetailView.swift in Sources */,
+				FD1240E82EA2C5D000C4BC15 /* WeekRow.swift in Sources */,
+				FD1240EC2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift in Sources */,
 				FD5F3BCA2E9C67BF004AEC44 /* Goal.swift in Sources */,
 				FD5F3BCE2E9C6804004AEC44 /* GoalModel.swift in Sources */,
 				FD1240D02EA2A01A00C4BC15 /* WelcomePage.swift in Sources */,
 				FD5F3BD42E9C6877004AEC44 /* SampleData.swift in Sources */,
 				FD1240CE2EA29EC400C4BC15 /* OnboardingView.swift in Sources */,
 				FD1240DD2EA2A50300C4BC15 /* TopicCard.swift in Sources */,
+				FD1240E62EA2C5BF00C4BC15 /* LongestStreakView.swift in Sources */,
 				FD5F3BD02E9C683E004AEC44 /* Streak.swift in Sources */,
 				FD5F3BCC2E9C67D6004AEC44 /* Topic.swift in Sources */,
 			);
@@ -368,8 +396,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,8 +428,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
