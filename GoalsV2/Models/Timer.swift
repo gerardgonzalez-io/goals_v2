@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
+import Foundation
 
+@MainActor
 @Observable
 final class Timer
 {
@@ -14,10 +16,13 @@ final class Timer
     private(set) var isRunning = false
 
     private var startDate: Date?
+    private weak var timer: Foundation.Timer?
+    private let frequency: TimeInterval = 1.0 / 60.0
+    private var accumulatedBeforeStart: TimeInterval = 0
 
     var lengthInSeconds: Int
     {
-        Int(displayTime(at: Date()))
+        Int(displayTime())
     }
     var lengthInMinutes: Int
     {
@@ -30,13 +35,24 @@ final class Timer
     {
         guard !isRunning else { return }
         startDate = Date()
+        accumulatedBeforeStart = elapsed
         isRunning = true
+        timer = Foundation.Timer.scheduledTimer(withTimeInterval: frequency, repeats: true)
+        { [weak self] _ in
+            self?.update()
+        }
+        timer?.tolerance = 0.1
     }
 
     func pause()
     {
-        guard isRunning, let start = startDate else { return }
-        elapsed += Date().timeIntervalSince(start)
+        guard isRunning else { return }
+        timer?.invalidate()
+        timer = nil
+        if let start = startDate {
+            let total = accumulatedBeforeStart + Date().timeIntervalSince(start)
+            elapsed = total
+        }
         startDate = nil
         isRunning = false
     }
@@ -44,18 +60,46 @@ final class Timer
     func stop()
     {
         if isRunning { pause() }
+        timer?.invalidate()
+        timer = nil
+        startDate = nil
+        accumulatedBeforeStart = 0
         elapsed = 0
     }
 
-    func displayTime(at date: Date) -> TimeInterval
+    func done(for topic: Topic)
     {
-        if isRunning, let startDate = startDate
+        if isRunning
         {
-            return elapsed + date.timeIntervalSince(startDate)
+            pause()
+        }
+        let total = elapsed
+        guard total > 0 else
+        {
+            stop()
+            return
+        }
+        stop()
+    }
+
+    func displayTime() -> TimeInterval
+    {
+        if isRunning, let start = startDate
+        {
+            return accumulatedBeforeStart + Date().timeIntervalSince(start)
         }
         else
         {
             return elapsed
+        }
+    }
+
+    nonisolated private func update()
+    {
+        Task
+        { @MainActor in
+            guard isRunning, let start = startDate else { return }
+            elapsed = accumulatedBeforeStart + Date().timeIntervalSince(start)
         }
     }
 

@@ -14,10 +14,9 @@ class StudySession
     var topic: Topic
     var goal: Goal
     var startDate: Date
-    var endDate: Date?
+    var endDate: Date
 
     /// Normalized start of day for this session's startDate using the current calendar and time zone.
-    /// Returns Date() if startDate is nil.
     var normalizedDay: Date
     {
         var calendarWithTimeZone = Calendar.current
@@ -27,13 +26,12 @@ class StudySession
 
     var durationInMinutes: Int
     {
-        guard let endDate else { return 0 }
         let seconds = endDate.timeIntervalSince(startDate)
         if seconds <= 0 { return 0 }
         return Int((seconds / 60))
     }
 
-    init(topic: Topic, goal: Goal, startDate: Date, endDate: Date? = nil)
+    init(topic: Topic, goal: Goal, startDate: Date, endDate: Date)
     {
         self.topic = topic
         self.goal = goal

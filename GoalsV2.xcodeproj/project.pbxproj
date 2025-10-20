@@ -21,6 +21,8 @@
 		FD1240E82EA2C5D000C4BC15 /* WeekRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240E72EA2C5D000C4BC15 /* WeekRow.swift */; };
 		FD1240EA2EA2C5E200C4BC15 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240E92EA2C5E200C4BC15 /* WeekDay.swift */; };
 		FD1240EC2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1240EB2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift */; };
+		FD1241262EA4112000C4BC15 /* TimerDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1241252EA4112000C4BC15 /* TimerDialView.swift */; };
+		FD1241282EA4116300C4BC15 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1241272EA4116300C4BC15 /* TimerView.swift */; };
 		FD5F3BC02E9C66B4004AEC44 /* GoalsV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BBD2E9C66B4004AEC44 /* GoalsV2App.swift */; };
 		FD5F3BC12E9C66B4004AEC44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BBC2E9C66B4004AEC44 /* ContentView.swift */; };
 		FD5F3BC32E9C66B4004AEC44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5F3BBB2E9C66B4004AEC44 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		FD1240E72EA2C5D000C4BC15 /* WeekRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekRow.swift; sourceTree = "<group>"; };
 		FD1240E92EA2C5E200C4BC15 /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 		FD1240EB2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalMinutesPickerSheet.swift; sourceTree = "<group>"; };
+		FD1241252EA4112000C4BC15 /* TimerDialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDialView.swift; sourceTree = "<group>"; };
+		FD1241272EA4116300C4BC15 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		FD5F3BA32E9C6364004AEC44 /* GoalsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD5F3BBB2E9C66B4004AEC44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5F3BBC2E9C66B4004AEC44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 				FD1240D72EA2A39B00C4BC15 /* Topic */,
 				FD1240E22EA2C54B00C4BC15 /* Streak */,
 				FD1240CC2EA29EA500C4BC15 /* Onboarding */,
+				FD1241242EA410CB00C4BC15 /* Timer */,
 				FD5F3BBC2E9C66B4004AEC44 /* ContentView.swift */,
 			);
 			path = Views;
@@ -118,6 +123,15 @@
 				FD1240EB2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift */,
 			);
 			path = Streak;
+			sourceTree = "<group>";
+		};
+		FD1241242EA410CB00C4BC15 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				FD1241272EA4116300C4BC15 /* TimerView.swift */,
+				FD1241252EA4112000C4BC15 /* TimerDialView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		FD5F3B9A2E9C6364004AEC44 = {
@@ -247,10 +261,12 @@
 				FD1240D22EA2A05300C4BC15 /* FeaturePage.swift in Sources */,
 				FD1240D62EA2A0A900C4BC15 /* GoalView.swift in Sources */,
 				FD1240DB2EA2A40A00C4BC15 /* TopicDetailView.swift in Sources */,
+				FD1241262EA4112000C4BC15 /* TimerDialView.swift in Sources */,
 				FD1240E82EA2C5D000C4BC15 /* WeekRow.swift in Sources */,
 				FD1240EC2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift in Sources */,
 				FD5F3BCA2E9C67BF004AEC44 /* Goal.swift in Sources */,
 				FD5F3BCE2E9C6804004AEC44 /* GoalModel.swift in Sources */,
+				FD1241282EA4116300C4BC15 /* TimerView.swift in Sources */,
 				FD1240D02EA2A01A00C4BC15 /* WelcomePage.swift in Sources */,
 				FD5F3BD42E9C6877004AEC44 /* SampleData.swift in Sources */,
 				FD1240CE2EA29EC400C4BC15 /* OnboardingView.swift in Sources */,
