@@ -34,6 +34,7 @@
 		FD5F3BD02E9C683E004AEC44 /* Streak.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BCF2E9C683E004AEC44 /* Streak.swift */; };
 		FD5F3BD22E9C6850004AEC44 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BD12E9C6850004AEC44 /* Timer.swift */; };
 		FD5F3BD42E9C6877004AEC44 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3BD32E9C6877004AEC44 /* SampleData.swift */; };
+		FDBE08742EA675250083938F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBE08732EA675250083938F /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		FD5F3BCF2E9C683E004AEC44 /* Streak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streak.swift; sourceTree = "<group>"; };
 		FD5F3BD12E9C6850004AEC44 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		FD5F3BD32E9C6877004AEC44 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		FDBE08732EA675250083938F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +85,9 @@
 			children = (
 				FD1240D72EA2A39B00C4BC15 /* Topic */,
 				FD1240E22EA2C54B00C4BC15 /* Streak */,
-				FD1240CC2EA29EA500C4BC15 /* Onboarding */,
 				FD1241242EA410CB00C4BC15 /* Timer */,
+				FDBE08722EA674EA0083938F /* Calendar */,
+				FD1240CC2EA29EA500C4BC15 /* Onboarding */,
 				FD5F3BBC2E9C66B4004AEC44 /* ContentView.swift */,
 			);
 			path = Views;
@@ -176,6 +179,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FDBE08722EA674EA0083938F /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FDBE08732EA675250083938F /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +273,7 @@
 				FD1240D62EA2A0A900C4BC15 /* GoalView.swift in Sources */,
 				FD1240DB2EA2A40A00C4BC15 /* TopicDetailView.swift in Sources */,
 				FD1241262EA4112000C4BC15 /* TimerDialView.swift in Sources */,
+				FDBE08742EA675250083938F /* CalendarView.swift in Sources */,
 				FD1240E82EA2C5D000C4BC15 /* WeekRow.swift in Sources */,
 				FD1240EC2EA2CBFB00C4BC15 /* GoalMinutesPickerSheet.swift in Sources */,
 				FD5F3BCA2E9C67BF004AEC44 /* Goal.swift in Sources */,

@@ -98,7 +98,7 @@ extension StudySession
             StudySession(
                 topic: topics[1],
                 goal: goal,
-                startDate: now.addingTimeInterval(-30 * 60),
+                startDate: now.addingTimeInterval(-70 * 60),
                 endDate:   now
             )
         ]

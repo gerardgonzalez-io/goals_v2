@@ -106,7 +106,6 @@ struct TopicDetailView: View
         {
             NavigationStack
             {
-                /*
                 CalendarView(topic: topic)
                     .toolbar
                     {
@@ -123,7 +122,6 @@ struct TopicDetailView: View
                             .accessibilityLabel("Close")
                         }
                     }
-                 */
             }
         }
     }
