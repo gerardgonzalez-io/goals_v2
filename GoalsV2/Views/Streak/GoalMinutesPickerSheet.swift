@@ -56,6 +56,7 @@ struct GoalMinutesPickerSheet: View
 }
 
 
-#Preview {
+#Preview
+{
     GoalMinutesPickerSheet(selectedMinutes: .constant(30)) {}
 }

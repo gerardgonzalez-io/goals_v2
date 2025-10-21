@@ -332,24 +332,16 @@ extension StreakView
 
     private func addNewGoal()
     {
-        var calendarWithTimeZone = Calendar.current
-        calendarWithTimeZone.timeZone = .current
-        let today = calendarWithTimeZone.startOfDay(for: .now)
-
-        let goal: Goal
-        if let existing = goals.first
+        // If there is a latest goal and the value hasn't changed, do nothing.
+        if let latest = goals.last, latest.goalInMinutes == tempGoalInMinutes
         {
-            goal = existing
-            goal.goalInMinutes = tempGoalInMinutes
-            goal.createdAt = today
-        }
-        else
-        {
-            let newGoal = Goal(goalInMinutes: tempGoalInMinutes)
-            modelContext.insert(newGoal)
-            goal = newGoal
+            showingGoalPicker = false
+            return
         }
 
+        // Otherwise, insert a new Goal snapshot with the chosen minutes.
+        let newGoal = Goal(goalInMinutes: tempGoalInMinutes)
+        modelContext.insert(newGoal)
         try? modelContext.save()
         showingGoalPicker = false
     }

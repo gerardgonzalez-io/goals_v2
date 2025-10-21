@@ -28,7 +28,10 @@ class Goal
     init(goalInMinutes: Int, createdAt: Date = Date())
     {
         self.goalInMinutes = goalInMinutes
-        self.createdAt = createdAt
+        var calendarWithTimeZone = Calendar.current
+        calendarWithTimeZone.timeZone = .current
+        let normalized = calendarWithTimeZone.startOfDay(for: createdAt)
+        self.createdAt = normalized
     }
 }
 
