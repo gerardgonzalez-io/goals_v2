@@ -13,11 +13,13 @@ class Topic: Identifiable
 {
     var id: UUID
     var name: String
+
     // Estudia para que es util esta propiedad studySessions
     // tanto tecnicamente como dentro del flujo funcional de la App
-    var studySessions: [StudySession]?
+    @Relationship(deleteRule: .cascade, inverse: \StudySession.topic)
+    var studySessions: [StudySession] = []
 
-    init(name: String, studySessions: [StudySession]? = nil)
+    init(name: String, studySessions: [StudySession] = [])
     {
         self.id = UUID()
         self.name = name
@@ -36,3 +38,4 @@ extension Topic
         Topic(name: "C languange"),
     ]
 }
+
