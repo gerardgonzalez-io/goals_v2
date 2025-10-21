@@ -11,7 +11,7 @@ import SwiftData
 struct GoalView: View
 {
     var onFinish: (() -> Void)? = nil
-    @State private var selectedMinutes: Int = 25
+    @State private var selectedMinutes: Int = 15
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
 
@@ -66,6 +66,8 @@ struct GoalView: View
 
             Button(role: .cancel)
             {
+                let initialSetting = Goal(goalInMinutes: selectedMinutes)
+                modelContext.insert(initialSetting)
                 finishOnboarding()
             }
             label:

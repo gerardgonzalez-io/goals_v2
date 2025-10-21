@@ -168,10 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				FD5F3BCD2E9C6804004AEC44 /* GoalModel.swift */,
+				FD5F3BCB2E9C67D6004AEC44 /* Topic.swift */,
 				FD5F3BC52E9C6768004AEC44 /* StudySession.swift */,
 				FD5F3BC72E9C6797004AEC44 /* DailyStatus.swift */,
 				FD5F3BC92E9C67BF004AEC44 /* Goal.swift */,
-				FD5F3BCB2E9C67D6004AEC44 /* Topic.swift */,
 				FD5F3BCF2E9C683E004AEC44 /* Streak.swift */,
 				FD5F3BD12E9C6850004AEC44 /* Timer.swift */,
 				FD5F3BD32E9C6877004AEC44 /* SampleData.swift */,

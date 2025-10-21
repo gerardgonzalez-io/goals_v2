@@ -33,11 +33,6 @@ struct ContentView: View
         }
         
     }
-
-    
-    
-
-
 }
 
 #Preview
